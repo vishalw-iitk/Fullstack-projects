@@ -55,7 +55,8 @@ ul{
     /* background-color: antiquewhite; */
 }
 .profile-image{
-    background-color: blue;
+    /* background-image: url("../Vishal_photo.jpg"); */
+    /* background-color: red; */
     width: 50%;
     height: 100%;
 }
@@ -79,7 +80,7 @@ ul{
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: red;
+    /* background-color: red; */
     width: 70%;
     height: 50%;
 }
