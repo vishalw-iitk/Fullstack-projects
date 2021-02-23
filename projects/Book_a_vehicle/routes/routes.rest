@@ -1,0 +1,38 @@
+GET http://localhost:3000/register-info
+// VScode check route to get the info of all the users
+
+###
+
+// VScode route to ensure that the login info is present in database and display status success
+POST http://localhost:3000/login-ok
+Content-Type: application/json
+
+{
+    "username" : "joros",
+    "password" : "jojo"
+}
+
+###
+
+//route to ensure that the user is registered and then redirect to home page
+POST http://localhost:3000/login-ok
+Content-Type: application/json
+
+{
+    "username" : "vis",
+    "password" : "vvv"
+}
+
+###
+
+// VSCode check route to fill the register form in vscode routes.rest
+POST http://localhost:3000/register-info
+Content-Type: application/json
+
+{
+    "name" : "JoroBunty",
+    "username" : "jorosp",
+    "email" : "joro@jo",
+    "password" : "jojo",
+    "subscribeDate :" : ""
+}

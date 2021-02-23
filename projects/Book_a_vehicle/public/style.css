@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-body{
+    background-image: url("https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.side-pop{
+    background-color: rgb(8, 8, 8);
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    padding: 5px 5px 5px 15px;
+    top: 30px;
+    right: 10px;
+}
+.form-container{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6%;
+}
+.form-container-register{
+    height: 85vh;
+}
+
+form{
+    width: 60%;
+    height: 70%;
+    padding: 7px;
+    background-color: rgba(63, 60, 60, 0.651);
+    border-radius: 6%;
+}
+.f-element{
+    width: 80%;
+    height: 1.5rem;
+    margin: 15px 25px 37px 25px;
+    padding: 0px 10px 10px 10px;
+}
+.input-ele{
+    width: 90%;
+    height: 30px;
+}
+.input-ele:hover{
+    border: 2px solid rgb(153, 151, 151);
+}
+.login-button{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 70%;
+    height: 35px;
+    border-radius: 3%;
+}
+.login-button:hover{
+    background-color: rgb(189, 186, 186);
+    border: 3px solid rgb(7, 7, 7);
+    cursor: pointer;
+}
+
+footer{
+
+}
+
+@media only screen and (max-width: 700px){
+.form-container{
+    width: 75%;       
+}
+form{
+    width: 80%;
+}
+}
