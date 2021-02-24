@@ -75,9 +75,217 @@ form{
     cursor: pointer;
 }
 
-footer{
-
+.navigation{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(5, 58, 75, 0.945);
+    height: 50px;
+    border-radius: 1%;
+    border-bottom: 3px solid black;
+    z-index: 1;
 }
+.main-navigation{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    width: 35%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu li{
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    /* border: 1px solid gray; */
+}
+.menu li:hover{
+    background-color: rgba(177, 171, 165, 0.301);
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+}
+.logout-button{
+    background: none;
+    margin: 3px;
+    width: 20%;
+}
+.logout-button button{
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(240, 232, 232);
+    border-radius: 10%;
+    float: right;
+    cursor: pointer;
+    /* width: 50%; */
+}
+.logout-button button:hover{
+    background-color: rgb(161, 159, 159);
+}
+
+.home-body{
+    background-image: url("https://thumbs.dreamstime.com/b/casual-black-man-car-business-shot-109011035.jpg");
+    background-size: 100% 75rem;
+    height: 60rem;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 60px;
+    flex-direction: column;
+    position: relative;
+    /* z-index: -1; */
+}
+.slider{
+    background-image: url("https://wallpaperaccess.com/full/3723585.jpg");
+    background-position:center;
+    background-size: cover;
+    height: 25%;
+    width: 80%;
+    /* margin: 10px; */
+    margin: 3% 3% 0% 9%;
+    border-radius: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-element{
+    height: 40%;
+    width: 6%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+.left-slider{
+    background-image: url("https://lh3.googleusercontent.com/proxy/2uxTRiORv5MXyoBc164Wt_YxkLDDV_121cmAFh0D-cpob0EvpyD4EJGC6xAwCzvW4a2lyaIaDwVofMsnnru_8VXGx62CNa6KhYnsEFKGwxxgi67lQ5Po6y_Z2Ve8Gni0wA9rpLLtCufvJ9-4wHHfTNRSeZ2aBvNs");
+}
+.right-slider{
+    background-image: url("https://banner2.cleanpng.com/20180426/ube/kisspng-computer-icons-font-awesome-arrow-direction-sign-5ae179ed4d3e72.3842644515247262533164.jpg");
+}
+.home-body p{
+    background-color: rgba(10, 10, 10, 0.568);
+    position: absolute;
+    left: 42%;
+    width: 35%;
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(247, 247, 247);
+    /* z-index: 0; */
+}
+.home-body-image{
+    position: absolute;
+    width: 28%;
+    height: 40%;
+    right: 2%;
+    top: 28%;
+    border-radius: 40%;
+    /* background-color: red; */
+    /* z-index: 1; */
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2018-rolls-royce-phantom-1536152159.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    color: white;
+    background-color: black;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 47%;
+    height: 80%;
+}
+.contact-element{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.contact-icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin: 0px 8px 0px 0px;
+}
+.location .contact-icon{
+    background-image: url("https://i.pinimg.com/564x/4e/dc/b4/4edcb460a940ff726549077935f57168.jpg");
+}
+.phone .contact-icon{
+    background-image: url("data:image/png;base64,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");
+}
+.emailid .contact-icon{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYeLxfHVTDlDiUt1XtJIp-Zk_dx5BkeLZfhQ&usqp=CAU");
+}
+.footer-abouts{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+.social-container{
+    display: flex;
+    height: 60px;
+    width: 150px;
+}
+.social-icon{
+    margin: 0px 3px 0px 3px;
+    width: 45px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fb{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYpSUx7v_04qbLiklQ7fGBVMqYzP3w6aOOrA&usqp=CAU");
+}
+.twitter{
+    background-image: url("https://cdn2.iconfinder.com/data/icons/social-media-with-original-colors/256/icon-twitter-tweet.png");
+}
+.linkedin{
+    background-image: url("https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-squircle.png")
+}
+.github{
+    background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")
+}
+
 
 @media only screen and (max-width: 700px){
 .form-container{
@@ -86,4 +294,107 @@ footer{
 form{
     width: 80%;
 }
+.navigation{
+    height: auto;
+    min-height: 50px;
+}
+
+.menu{
+    display: none;
+}
+.logout-button{
+    display: none;
+}
+
+.main-navigation{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.menu-small{
+    width: 100%;
+    margin: 0px;
+    padding: 0px; 
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-small ul{
+    width: 35%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu-small li{
+    margin: 10px;
+    display: block;
+}
+.menu-small a{
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+}
+.lg-small{  /* appear on 1st click */
+    display: block;
+    /* background: red; */
+    margin: 0px 0px 0px 13px;
+    width: 20%;
+    float: left;
+}
+.lg-small button{ /* appear on 1st click */
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    display: block;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 10%;
+    float: left;
+    cursor: pointer;
+}
+.lg-small button:hover{
+    background-color: rgb(189, 186, 186);
+    border: 3px solid rgb(7, 7, 7);
+    cursor: pointer;
+}
+
+.menu-lines{ /* appear on 1st click */
+    width: 8%;
+    background-color: rgb(0, 255, 234);
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    position: fixed;
+    right: 5px;
+    top: 0px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.menu-lines .lining{ 
+    margin: 3px;
+    width: 80%;
+    height: 14%;
+    padding: 0px 2px 0px 0px;
+    border: 0.2px solid rgba(71, 69, 69, 0.644);
+    background-color: rgb(255, 255, 255);
+    
+}
+.home-body{
+    background-size: 100% 35rem;
+    height: 30rem;
+}
+
+
 }

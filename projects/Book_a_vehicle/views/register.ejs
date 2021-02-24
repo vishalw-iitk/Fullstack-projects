@@ -15,6 +15,9 @@
         <div class="form-container form-container-register">
             <h2 class="welcome">Welcome to Book-it!!</h2>
             <form action="/register" method="POST">
+                <% if(messages.error){ %>
+                    <%= messages.error %>
+                <% } %>
                 <div class="f-element">
                     <label for="name">Name</label>
                     <input class="input-ele" type="text" name="name">

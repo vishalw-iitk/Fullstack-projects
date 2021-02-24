@@ -15,6 +15,9 @@
         <div class="form-container">
             <h2 class="welcome">Welcome to Book-it!!</h2>
             <form action="/login" method="POST">
+                <% if(messages.error){ %>
+                    <%= messages.error %>
+                <% } %>   
                 <div class="f-element">
                     <label for="username">Username</label>
                     <input class="input-ele" type="text" name="username">

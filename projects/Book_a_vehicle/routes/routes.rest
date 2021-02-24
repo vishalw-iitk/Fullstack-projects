@@ -1,10 +1,10 @@
-GET http://localhost:3000/register-info
+GET http://localhost:3000/register-vscode
 // VScode check route to get the info of all the users
 
 ###
 
 // VScode route to ensure that the login info is present in database and display status success
-POST http://localhost:3000/login-ok
+POST http://localhost:3000/login-vscode
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 ###
 
 //route to ensure that the user is registered and then redirect to home page
-POST http://localhost:3000/login-ok
+POST http://localhost:3000/login
 Content-Type: application/json
 
 {
@@ -26,7 +26,7 @@ Content-Type: application/json
 ###
 
 // VSCode check route to fill the register form in vscode routes.rest
-POST http://localhost:3000/register-info
+POST http://localhost:3000/register-vscode
 Content-Type: application/json
 
 {
@@ -36,3 +36,19 @@ Content-Type: application/json
     "password" : "jojo",
     "subscribeDate :" : ""
 }
+
+###
+
+//passport login vscode
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "visi",
+    "password" : "vviv"
+}
+
+###
+
+//logout
+DELETE http://localhost:3000/logout
