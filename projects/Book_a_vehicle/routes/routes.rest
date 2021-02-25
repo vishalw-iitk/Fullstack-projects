@@ -52,3 +52,44 @@ Content-Type: application/json
 
 //logout
 DELETE http://localhost:3000/logout
+
+//------------------------------------------------
+
+###
+
+GET http://localhost:3000/products
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+# {
+#     "cars.name" : "car-5",
+#     "cars.location" : "www.ww.com",
+#     "cars.price" : 444,
+#     "bikes.name" : "bike-5",
+#     "bikes.location" : "www.ww.com",
+#     "bikes.price" : 3333
+# }
+
+{
+        "name" : "Car-5",
+        "location" : "ww.ww.com",
+        "price" : 444
+}
+
+
+
+# {
+#     "cars" : [{
+#         "name" : "Car-5",
+#         "location" : "ww.ww.com",
+#         "price" : 444
+#     }],
+#     "bikes" : [{
+#         "name" : "bike-5",
+#         "location" : "ww.ww.com",
+#         "price" : 444
+#     }]
+# }

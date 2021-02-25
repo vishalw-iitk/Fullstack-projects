@@ -22,6 +22,8 @@ const UsersRoutes = require('./routes/vehicle-users')
 app.use('/', UsersRoutes) //http://localhost:3000/<route>
 //If it was => app.use('/users', UsersRoutes) then => //http://localhost:3000/users/<route>
 
+const VehiclesRoutes = require('./routes/car_bike')
+app.use('/', VehiclesRoutes)
 
 
 app.listen(3000, ()=>console.log('Listening to server....'))
