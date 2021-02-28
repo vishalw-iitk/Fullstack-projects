@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 const Vehiclesdata = require('../models/car_bike')
 
 const express = require('express')
