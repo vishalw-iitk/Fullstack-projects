@@ -26,4 +26,4 @@ const VehiclesRoutes = require('./routes/car_bike')
 app.use('/', VehiclesRoutes)
 
 
-app.listen(3000, ()=>console.log('Listening to server....'))
+app.listen(process.env.PORT || 3000, ()=>console.log('Listening to server....'))
