@@ -200,7 +200,7 @@ form{
 .right-slider{
     background-image: url("https://banner2.cleanpng.com/20180426/ube/kisspng-computer-icons-font-awesome-arrow-direction-sign-5ae179ed4d3e72.3842644515247262533164.jpg");
 }
-.home-body p{
+.home-body .home-message{
     background-color: rgba(10, 10, 10, 0.568);
     position: absolute;
     left: 38%;
@@ -360,7 +360,7 @@ form{
     color: white;
     font-weight:bolder;
 }
-.home-body p{
+.home-body .home-message{
     font-size: 0.8rem;
 }
 .lg-small{  /* appear on 1st click */
