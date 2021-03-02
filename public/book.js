@@ -109,7 +109,7 @@ function ready(){
     const purchase = document.getElementsByClassName('purchase')[0]
     purchase.addEventListener('click', pay_the_fees)
     function pay_the_fees(event){
-        alert("payment")
+        alert("Payment completed. Total reset to ZERO")
         var cart_items = document.getElementsByClassName('cart-row')
         while(cart_items.length > 1){
             cart_items[cart_items.length-1].remove()
