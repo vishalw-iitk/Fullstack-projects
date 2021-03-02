@@ -49,6 +49,11 @@ router.get('/book', checkAuthenticated, (req, res)=>{
     res.render('book.ejs')
 })
 
+// route to render the about.ejs
+router.get('/about', checkAuthenticated, (req, res)=>{
+    res.render('about.ejs')
+})
+
 // VScode check route to get the info of all the users
 router.get('/register-vscode', checkNotAuthenticated, async (req, res)=>{
     try{
